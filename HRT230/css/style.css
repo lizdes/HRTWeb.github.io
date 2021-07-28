@@ -117,6 +117,30 @@ button:hover {
   /* Change the background of the button on :hover. */
   background-color: darkgreen;
 }
+
+/* gallery setup from jquery video  */
+main-img {
+  width: 50%;
+  float: left;
+  margin-right: 16px;
+}
+.gallery {
+  width: 95%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media(min-width: 700px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 16px;
+  }
+  @media(min-width: 1080px) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
 @media (min-width: 768px) {
   /* apply custom formatting when the viewport exceeds a minimum width of 768px. */
   .examples {
