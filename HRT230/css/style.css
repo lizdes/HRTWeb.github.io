@@ -1,0 +1,228 @@
+/*Basic Reset*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/*Page Styling*/
+.wrapper {
+  /* Limit maximum width and center */
+  margin-top: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 95%;
+}
+div {
+  padding: 20px;
+  /*background: linear-gradient(0.25turn, #f69d3c, #3f87a6, #ebf8e1 ); border: 1px solid grey; */
+}
+header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  
+}
+main {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: left;
+  font-size: 2em;
+  color: darkblue;
+  text-shadow: 1px 1px 0px gray;
+  display: inline-block;
+}
+h2 {
+  font-family: helvetica, arial, sans-serif;
+  color: darkblue;
+  font-size: 1.3em;
+}
+h3 {
+  font-family: palatino, arial, sans-serif;
+  font-size: 1em;
+  color: darkorange;
+}
+figcaption {
+  font-size: 90%;
+  color: lightcyan;
+  text-align: center;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  color: darkgreen;
+  font-size: 1em;
+/*  background-image: url("https://mir-s3-cdn-cf.behance.net/7b5c915d57f8f3759a6a3cf2af87c50a/1edda266-3e94-4b4c-92ab-bc3a53378140_rwc_509x0x2489x410x3191.jpg");
+  background-repeat: no-repeat;
+  padding: 3px;
+  padding-left: 2px;
+  background-size: cover;
+  margin: 5 px; */
+}
+.value_proposition {
+  text-align: center;
+  font-size: 1.1em;
+}
+article {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+img {
+  margin-left: 5%;
+  width: 90%;
+  /* Add box shadow */
+  -moz-box-shadow: 1px 1px 1px 3px darkgreen;
+  -webkit-box-shadow: 1px 1px 1px 3px darkgreen;
+  box-shadow: 1px 1px 1px 3px darkgreen;
+}
+nav {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+a {
+  color: darkgreen;
+}
+ul {
+  list-style-type: none;
+}
+.button1 {
+  margin: 20px;
+}
+button {
+  /* format the buttons */
+  background-color: #4caf50; /* Green */
+  border: 3px solid darkgreen;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 16px;
+}
+button:hover {
+  /* Change the background of the button on :hover. */
+  background-color: darkgreen;
+}
+@media (min-width: 768px) {
+  /* apply custom formatting when the viewport exceeds a minimum width of 768px. */
+  .examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .text_blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+a:hover {
+  /* Change link color on :hover  */
+  color: lightseagreen;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* TopCentered text */
+.top-centered {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: darkslateblue;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*   SAVED CODE
+
+@media (min-width: 768px) {
+  
+  main {
+  float: left;
+  width: 75%;
+  }
+
+  aside{
+  float: right;
+  width: 25%;
+    }
+}
+
+.image-wrap {
+  float: right;
+  width: 60%;
+  height:60%;
+}
+
+  / * Add box shadow * /
+  -moz-box-shadow: 10px 10px 10px 30px #777777;
+  -webkit-box-shadow: 10px 10px 10px 30px #777777;
+  box-shadow: 10px 10px 10px 30px #777777;
+
+  background-image: url("https://images.unsplash.com/photo-1528844323638-9696af3c5056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3px;
+  padding-left: 2px;
+  margin: 5 px;
+
+
+*/
