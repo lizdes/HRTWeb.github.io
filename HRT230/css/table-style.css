@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,700);
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:200,400,700);
+
+/* Page Design */
+
+body { background-color: rgb(238, 238, 238); margin: 0; padding: 0; font-family: 'Yantramanav', sans-serif; color: #555; font-size: 18px; line-height: 18px; font-weight: 400; }
+
+.header-sun { margin: 0; background: #000 url("https://images.unsplash.com/photo-1590223034677-95f479f0164a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80") no-repeat 0 0; height: 65px; padding: 1px; }
+/* unsplash image by @frankieremington */
+
+.header-shade { margin: 0; background: #000 url("https://images.unsplash.com/photo-1496165044541-3221a1d68cc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80") no-repeat 0 0; height: 65px; padding: 1px; }
+/* unsplash image by Dewang Gupta */
+
+article { margin: 10px 30px; }
+
+h1 { font-family: 'Raleway', sans-serif; font-size: 2.4em; line-height: 44px; text-transform: uppercase; color: #fff; font-weight: 200; margin: 0; padding: 20px 0 0 30px; letter-spacing: 2px; }
+
+h2 { margin: 20px 0 10px 0; font-size: 2em; font-weight: 700; }
+
+p { margin: 10 0 20px 0; }
+
+a:hover {
+  /* Change link color on :hover  */
+  color: darkgreen;
+}
+
+
+/* Table Heading Styles */
+table#courses { border-collapse: collapse; border: 1px solid rgba(154,154,154,.75); margin-right: 20px; }
+
+table#courses th:nth-child(1), table#courses td:nth-child(1) { width: 20%; text-align: left;}
+table#courses th:nth-child(2), table#courses td:nth-child(2) { width: 20%; text-align: left; }
+table#courses th:nth-child(3), table#courses td:nth-child(3) { width: 20%; text-align: left; }
+table#courses th:nth-child(4), table#courses td:nth-child(4) { width: 20%; text-align: left; }
+table#courses th:nth-child(5), table#courses td:nth-child(5) { width: 10%; text-align: left; }
+table#courses th:nth-child(6), table#courses td:nth-child(6) { width: 10%; text-align: left; }
+
+table#courses thead { font-size: .7em; text-transform: uppercase; }
+
+table#courses thead tr { border-bottom: 1px solid rgba(154,154,154,.75); }
+
+table#courses thead th { 
+  padding: 8px; 
+  color: rgba(0,0,0,.6); 
+  padding: 8px; 
+  vertical-align: bottom; 
+  transition: background-color .5s, color .5s; }
+
+table#courses thead th:hover { color: #000; background-color: #b7d5f8; }
+
+table#courses thead th:first-child { padding-left: 20px; }
+
+/* sorting section rules and styles */
+
+table#courses thead th.sorted {
+  background-color: #fee8cd;
+  border-left: 1px dotted #9a9a9a;
+  border-right: 1px dotted #9a9a9a;
+ color: rgba(0,0,0,.4);
+}
+
+table#courses thead th.sorted::after {
+content:''; display: inline-block; margin-left: 8px; margin-top: -2px;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+}
+
+table#courses thead th.sorted.asc::after {border-top: 8px solid rgba(0,0,0,.4);}
+table#courses thead th.sorted.desc::after {border-bottom: 8px solid rgba(0,0,0,.4);}
+
+table#courses thead th.header { cursor: pointer}
+
+
+/* Table Body Styles */
+table#courses tbody { font-size: .9em; line-height: 15px; }
+table#courses tbody tr { transition: background-color .5s, color .3s; }
+table#courses tbody tr:nth-child(even) { background: rgba(151, 184, 167, 0.493); }
+table#courses tbody tr:hover { color: #000; background-color: rgb(144, 205, 230); }
+table#courses tbody td { padding: 8px; border-top: 1px dotted rgba(154,154,154,.75); border-right: 1px dotted rgba(154, 154, 154, 0.75); }
+table#courses tbody td img { width: 75px; float: left; margin: 0 10px 0 0; border: 1px solid #fff; }
+table#courses tbody td span { display: none; }
+table#courses tbody td:first-child { font-weight: 700; }
+table#courses tbody td:last-child { text-align: left; }
+table#courses tbody td::after { content:''; display: block; clear: both; }
+
+
