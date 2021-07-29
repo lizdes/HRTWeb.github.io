@@ -38,12 +38,12 @@ main {
 footer {
   grid-column-start: 1;
   grid-column-end: 5;
-  position: fixed;
+  /* position: fixed;
       width: 100%;
       left: 0;
       bottom: 0;
       color: rgb(116, 112, 134);
-      text-align: center;
+      text-align: center; */
 }
 h1 {
   font-family: helvetica, arial, sans-serif;

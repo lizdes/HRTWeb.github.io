@@ -3,7 +3,21 @@
 
 /* Page Design */
 
-body { background-color: rgb(238, 238, 238); margin: 0; padding: 0; font-family: 'Yantramanav', sans-serif; color: #555; font-size: 18px; line-height: 18px; font-weight: 400; }
+.wrapper {
+  /* Limit maximum width and center */
+  margin-top: 30px;
+  margin: 0 auto;
+ /* display: grid;
+  grid-template-columns: 1fr 2fr 1fr;*/
+  width: 90%;
+}
+
+body { background-color: white; margin: 0; padding: 0; font-family: 'Yantramanav', sans-serif; color: #555; font-size: 18px; line-height: 18px; font-weight: 400; }
+
+/* main{
+  grid-column-start:1 ;
+  grid-column-end: 3;
+} */
 
 .header-sun { margin: 0; background: #000 url("https://images.unsplash.com/photo-1590223034677-95f479f0164a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80") no-repeat 0 0; height: 65px; padding: 1px; }
 /* unsplash image by @frankieremington */
@@ -12,6 +26,7 @@ body { background-color: rgb(238, 238, 238); margin: 0; padding: 0; font-family:
 /* unsplash image by Dewang Gupta */
 
 article { margin: 10px 30px; }
+main { margin: 10px 30px; }
 
 h1 { font-family: 'Raleway', sans-serif; font-size: 2.4em; line-height: 44px; text-transform: uppercase; color: #fff; font-weight: 200; margin: 0; padding: 20px 0 0 30px; letter-spacing: 2px; }
 
@@ -23,6 +38,7 @@ a:hover {
   /* Change link color on :hover  */
   color: darkgreen;
 }
+
 
 
 /* Table Heading Styles */

@@ -1,23 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <title>Ferns and Grasses</title>
+  <meta http-equiv="content-type" content="text/html;charset=Windows-1252">
+  <title>Ferns and Ephemerals</title>
+  <link rel="stylesheet" type="text/css" href="./css/table-style.css">
+  <script type="text/javascript" src="./js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="./js/table-sorter.js"></script>
 </head>
 
 <body>
-  <a href="./index.html">Home</a>
-  <h2>Ferns and Grasses</h2>
-  <ul class="list">
-    <li class="list_item"><a href="#">First item</a></li>
-    <li class="list_item"><a href="#">Second item</a></li>
-  </ul>
+  <div class="wrapper">
+    <header class=header-sun>
+      <h1>Ferns and Ephemerals</h1>
+    </header>
+    <main>
+
+      <table id="courses" class="focus-highlight">
+        <thead>
+          <tr>
+            <th>Genus</th>
+            <th>Epithet</th>
+            <th>Common Name</th>
+            <th>Native</th>
+            <th>USDA</th>
+            <th>Unit ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Adiantum </td>
+            <td class="tbl_epithet">pedatum</td>
+            <td class="tbl_common">maidenhair fern</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=ADAL" />link</a>
+            </td>
+            <td class="tbl_id">3-01</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Dryopteris </td>
+            <td class="tbl_epithet">erythrosora</td>
+            <td class="tbl_common">Japanese shield fern</td>
+            <td class="tbl_native">no</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=" />link</a></td>
+            <td class="tbl_id">3-02</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Matteuccia </td>
+            <td class="tbl_epithet">struthiopteris</td>
+            <td class="tbl_common">ostrich fern</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=MAST" />link</a>
+            </td>
+            <td class="tbl_id">3-03</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Onoclea</td>
+            <td class="tbl_epithet">sensibilis</td>
+            <td class="tbl_common">sensitive fern</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=ONSE" />link</a>
+            </td>
+            <td class="tbl_id">3-04</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Osmunda </td>
+            <td class="tbl_epithet">regalis</td>
+            <td class="tbl_common">royal fern</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=OSRE" />link</a>
+            </td>
+            <td class="tbl_id">3-05</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Osmundastrum </td>
+            <td class="tbl_epithet">cinnamomeum</td>
+            <td class="tbl_common">cinnamon fern</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=OSCI" />link</a>
+            </td>
+            <td class="tbl_id">3-06</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Polystichum </td>
+            <td class="tbl_epithet">acrostichoides</td>
+            <td class="tbl_common">Christmas fern</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=POAC4" />link</a>
+            </td>
+            <td class="tbl_id">3-07</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Dicentra </td>
+            <td class="tbl_epithet">cucullaria</td>
+            <td class="tbl_common">Dutchman's breeches</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=DICU" />link</a>
+            </td>
+            <td class="tbl_id">8-13</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Dicentra </td>
+            <td class="tbl_epithet">eximia</td>
+            <td class="tbl_common">fringed bleeding heart</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=DIEX" />link</a>
+            </td>
+            <td class="tbl_id">8-14</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Dicentra </td>
+            <td class="tbl_epithet">spectabilis</td>
+            <td class="tbl_common">bleeding heart</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=LASP8" />link</a>
+            </td>
+            <td class="tbl_id">8-15</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Trillium</td>
+            <td class="tbl_epithet">sessile</td>
+            <td class="tbl_common">trillium</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=TRAN5" />link</a>
+            </td>
+            <td class="tbl_id">8-16</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Mertensia</td>
+            <td class="tbl_epithet">virginica</td>
+            <td class="tbl_common">Virginia bluebells</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=MEVI3" />link</a>
+            </td>
+            <td class="tbl_id">8-17</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Collinsia</td>
+            <td class="tbl_epithet">verna</td>
+            <td class="tbl_common">blue-eyed Mary</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=COVE2" />link</a>
+            </td>
+            <td class="tbl_id">8-18</td>
+          </tr>
+          <tr class="tbl_row">
+            <td class="tbl_genus">Podophyllum</td>
+            <td class="tbl_epithet">peltatum</td>
+            <td class="tbl_common">may apple</td>
+            <td class="tbl_native">yes</td>
+            <td class="tbl_USDAlink"><a href="https://plants.sc.egov.usda.gov/home/plantProfile?symbol=POPE" />link</a>
+            </td>
+            <td class="tbl_id">8-19</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+    </main>
+    <footer class="footer_section">
+      <nav>
+        <p>Website design &copy; 2020 Elizabeth Desrosiers</p>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>
